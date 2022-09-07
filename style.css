@@ -1,0 +1,280 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+body {
+    padding: 0 0 3% 0;
+    height: 100vh;
+}
+
+header>h1 {
+    background-color: rgb(73, 73, 247);
+    text-align: center;
+    color: white;
+}
+
+div>img {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: 0 auto 0 auto;
+    width: 10%;
+}
+
+main>div>h2 {
+    margin-top: 1%;
+    margin-bottom: 1.75%;
+    text-align: center;
+}
+
+
+/* 
+main {
+    height: 100vh;
+} */
+
+#form_input {
+    display: flex;
+    justify-content: center;
+    border: 1.75px rgb(73, 73, 247) solid;
+    border-radius: 10px;
+    margin: 0 10% 2% 10%;
+}
+
+#form_input>form>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#form_input_action>h1 {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#form_input_action>input[type=submit] {
+    margin-top: 2%;
+    background-color: rgb(73, 73, 247);
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#pencarian {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1.75px rgb(73, 73, 247) solid;
+    border-radius: 10px;
+    margin: 0 10% 2% 10%;
+}
+
+#pencarian>#pencarian-buku {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#pencarian>#pencarian-buku {
+    margin: 2% 15% 2% 15%;
+}
+
+#pencarian>#pencarian-buku>label {
+    margin-bottom: 1.15%;
+}
+
+#pencarian>#pencarian-buku>input {
+    margin: 0 0 2% 0;
+}
+
+#form_telah_dibaca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1.75px rgb(73, 73, 247) solid;
+    border-radius: 10px;
+    margin: 0 10% 2% 10%;
+    padding: 0 0 5% 0;
+    /* width: 80%; */
+}
+
+#form_telah_dibaca>h1 {
+    text-align: center;
+}
+
+#form_belum_dibaca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1.75px rgb(73, 73, 247) solid;
+    border-radius: 10px;
+    margin: 0 10% 0 10%;
+    padding: 0 0 5% 0;
+    /* width: 80%; */
+}
+
+#form_belum_dibaca>h1 {
+    text-align: center;
+}
+
+#form_input>form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+#form_input>form>input {
+    margin-bottom: 2%;
+}
+
+.container-buku {
+    margin: 2% 5% 1% 5%;
+    border: 3px rgb(73, 73, 247) solid;
+    border-radius: 5px;
+}
+
+.container-buku>p {
+    margin-top: 0.5%;
+}
+
+.one {
+    display: flex;
+    flex-direction: row;
+}
+
+.one>button {
+    margin-right: 1.15%;
+    margin-bottom: 0.25%;
+    height: 50px;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.one>label {
+    margin-right: 1.15%;
+}
+
+.one>.edit {
+    background-color: aqua;
+    color: white;
+    border: 1px aqua solid;
+    /* height: 20%; */
+}
+
+.one>.ulang,
+.selesai {
+    background-color: green;
+    color: white;
+    border: 1px green solid;
+}
+
+.one>.hapus {
+    background-color: red;
+    color: white;
+    border: 1px red solid;
+}
+
+#modal-box {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+    width: 80vw;
+    height: 60vh;
+    z-index: 1;
+}
+
+#modal-box>form {
+    display: flex;
+    border: rgb(73, 73, 247) 1.75px solid;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    background-color: white;
+}
+
+#modal-box>form>label {
+    margin-left: 15%;
+    /* margin-right: auto; */
+}
+
+#modal-box>form>.one {
+    margin-left: 15%;
+}
+
+#modal-box>form>input {
+    margin-bottom: 2.25%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+#modal-box>form>button {
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#editBtn {
+    background-color: aqua;
+    color: white;
+    border: aqua 2px solid;
+    border-radius: 2px;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+#btlEdit {
+    background-color: red;
+    color: white;
+    border: red 2px solid;
+    border-radius: 2px;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgb(73, 73, 247);
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        padding: 0 0 0 0;
+        height: 100vh;
+    }
+    main {
+        height: 100vh;
+    }
+    section {
+        margin: 0 5% 10% 5%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    body {
+        padding: 0 0 0 0;
+        height: 100vh;
+    }
+    main {
+        height: 100vh;
+    }
+    section {
+        margin: 0 5% 10% 5%;
+    }
+}

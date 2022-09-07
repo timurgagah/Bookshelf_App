@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+    <main>
+        <div>
+            <img src="img/book.svg" alt="Gambar Buku">
+            <h2 id="nama"></h2>
+        </div>
+        <section id="form_input">
+            <form id="form_input_action" autocomplete="off">
+                <h1>Masukkan Buku Baru</h1>
+                <label for="">Judul</label><input type="text" name="judul" id="title" required>
+                <label for="">Pengarang</label><input type="text" name="pengarang" id="author" required>
+                <label for="">Tahun</label><input type="number" name="tahun" id="year" required>
+                <div><label for="sudah_dibaca">Selesai dibaca</label><input type="checkbox" name="sudah_dibaca" id="isComplete"></div>
+                <input type="submit" value="Input Buku">
+            </form>
+        </section>
+        <section id="pencarian">
+            <form id="pencarian-buku">
+                <h1>Cari Buku</h1>
+                <input type="text" name="" id="cari">
+            </form>
+        </section>
+        <section id="form_telah_dibaca">
+            <h1>Buku yang telah dibaca</h1>
+        </section>
+        <section id="form_belum_dibaca">
+            <h1>Buku yang belum dibaca</h1>
+        </section>
+        <div id="modal-box">
+            <form id="edit-data">
+                <h3 style="text-align:center;">Edit Data</h3>
+                <label for="">Judul</label><input type="text" name="" id="editJdl" required>
+                <label for="">Pengarang</label><input type="text" name="" id="editAtr" required>
+                <label for="">Tahun</label><input type="text" name="" id="editYr" required>
+                <label for=""></label><button type="submit" id="editBtn">Edit Data</button>
+                <label for=""></label><button type="button" id="btlEdit">Batalkan</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Timur Gagah Prawiro</p>
+    </footer>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
